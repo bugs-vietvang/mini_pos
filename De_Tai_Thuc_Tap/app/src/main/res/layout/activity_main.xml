@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bgr">
 <EditText
     android:id="@+id/edit_Username"
     android:layout_width="match_parent"
@@ -29,6 +30,9 @@
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginRight="50dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="5dp"
         android:hint="Mật khẩu"
         android:textSize="18dp"
         android:background="@drawable/shape_input"
@@ -41,11 +45,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/edit_password"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginRight="200dp"
         android:layout_centerHorizontal="true"
         android:padding="15dp"
         android:textSize="18dp"
         android:text="Đăng Nhập"
         android:textColor="@color/white"
-        android:background="@drawable/shape_button"/>
+        android:background="@drawable/shape_botrongoc"
+        android:onClick="openChonBan"/>
 </RelativeLayout>

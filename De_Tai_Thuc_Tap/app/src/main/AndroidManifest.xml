@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity_goi_mon"></activity>
+        <activity android:name=".activity_Thanh_Toan_Tien_Mat" />
+        <activity android:name=".activity_Chon_Ban" />
+        <activity android:name=".activity_Thanh_Toan_TaiKhoan" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_Thanh_Toan_TaiKhoan"
+    android:background="@drawable/bgr">
+
+    <LinearLayout
+        android:id="@+id/ln_driver1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btn_lammoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Làm Mới"
+            android:background="@color/black"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/rad_tienmat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#053DE943"
+            android:buttonTint="#48D14E"
+            android:text="Tiền mặt"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rad_thetindung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#053DE943"
+            android:buttonTint="#48D14E"
+            android:text="Thẻ Tín dụng"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rad_trentaikhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#053DE943"
+            android:buttonTint="#48D14E"
+            android:layout_gravity="center"
+            android:text="Trên tài khoản"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_driver2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ln_driver1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtTongTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng Tiền: "
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txtTongTien1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14.10"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="40dp"
+            android:background="@color/green"
+            android:padding="15dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_driver3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ln_driver2"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtgiamgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng Tiền: "
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/edt_giamgia"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textColorHint="@color/red"
+            android:textSize="18dp"
+            android:textColor="@color/red"
+            android:layout_marginLeft="40dp"
+            android:padding="15dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/txtphantram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" % "
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_driver4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ln_driver3"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtThanhTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ThànhTiền: "
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txtThanhTien1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14.10"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="40dp"
+            android:background="@color/blue"
+            android:padding="15dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_driver5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ln_driver4"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtTienNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng Tiền: "
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/edt_TienNhan"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textColorHint="@color/green"
+            android:textSize="18dp"
+            android:textColor="@color/green"
+            android:layout_marginLeft="40dp"
+            android:padding="15dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/txttip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Tip. "
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/edt_tientip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textColorHint="@color/green"
+            android:textSize="18dp"
+            android:textColor="@color/green"
+            android:layout_marginLeft="30dp"
+            android:padding="15dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_driver6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ln_driver5"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtTralai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiền Trả Lại:"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txtTralai1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="40dp"
+            android:background="@color/green"
+            android:padding="15dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_driver7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ln_driver6"
+        android:orientation="horizontal"
+        android:layout_marginTop="250dp"
+        android:gravity="right">
+
+
+        <Button
+            android:id="@+id/btnThanhToan"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="In"
+            android:textColor="@color/white"
+            android:background="@color/black"/>
+        <Button
+            android:id="@+id/btnin"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="Thanh Toán"
+            android:drawableLeft=""
+            android:textColor="@color/white"
+            android:background="@color/black"/>
+    </LinearLayout>
+</RelativeLayout>
