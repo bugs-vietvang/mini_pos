@@ -19,4 +19,9 @@ public class activity_Chi_Tiet_Mon_An extends AppCompatActivity {
         Intent intent = new Intent(this, activity_Thanh_Toan_TaiKhoan.class);
         startActivity(intent);
     }
+
+    public void backChonban(View view) {
+        Intent intent = new Intent(this, activity_Chon_Ban.class);
+        startActivity(intent);
+    }
 }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_Thanh_Toan_TaiKhoan"
+
     android:background="@drawable/bgr">
 
     <LinearLayout
@@ -51,6 +52,7 @@
             android:buttonTint="#48D14E"
             android:layout_gravity="center"
             android:text="Trên tài khoản"
+            android:checked="true"
             android:textColor="@color/white" />
     </LinearLayout>
     <LinearLayout
