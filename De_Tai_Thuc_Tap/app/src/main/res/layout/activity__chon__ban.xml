@@ -23,6 +23,7 @@
             android:layout_height="120dp"
             android:text="1"
             android:textSize="25dp"
+            android:onClick="openChonMon"
             android:background="@drawable/shape_ban"/>
         <Button
             android:id="@+id/btn_ban2"

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Đề Tài Thực Tập</string>
+    <string name="title_activity__chon__mon">activity_Chon_Mon</string>
+    <string name="appbar_scrolling_view_behavior">chonmon</string>
 </resources>

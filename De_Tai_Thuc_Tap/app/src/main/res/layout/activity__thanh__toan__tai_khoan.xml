@@ -20,6 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Làm Mới"
+            android:drawableStart="@drawable/ic_refresh"
+            android:drawableLeft="@drawable/ic_refresh"
             android:background="@color/black"
             android:textColor="@color/white"/>
 
@@ -30,7 +32,8 @@
             android:background="#053DE943"
             android:buttonTint="#48D14E"
             android:text="Tiền mặt"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:onClick="openThanhToanTienMat"/>
         <RadioButton
             android:id="@+id/rad_thetindung"
             android:layout_width="wrap_content"
@@ -38,6 +41,7 @@
             android:background="#053DE943"
             android:buttonTint="#48D14E"
             android:text="Thẻ Tín dụng"
+            android:onClick="openTheTinDung"
             android:textColor="@color/white" />
         <RadioButton
             android:id="@+id/rad_trentaikhoan"
@@ -227,20 +231,26 @@
 
 
         <Button
-            android:id="@+id/btnThanhToan"
-            android:layout_width="100dp"
+            android:id="@+id/btn_print1"
+            android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:text="In"
+            android:drawableStart="@drawable/ic_print_white"
+            android:drawableLeft="@drawable/ic_print_white"
             android:textColor="@color/white"
             android:background="@color/black"/>
+
         <Button
-            android:id="@+id/btnin"
-            android:layout_width="100dp"
+            android:id="@+id/btn_thanhtoan"
+            android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:drawableStart="@drawable/ic_money"
+            android:drawableLeft="@drawable/ic_money"
+            android:drawablePadding="5dp"
             android:text="Thanh Toán"
-            android:drawableLeft=""
-            android:textColor="@color/white"
-            android:background="@color/black"/>
+            android:textColor="@color/white" />
     </LinearLayout>
 </RelativeLayout>
