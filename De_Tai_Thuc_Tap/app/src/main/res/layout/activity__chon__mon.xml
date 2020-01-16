@@ -31,7 +31,8 @@
             android:layout_width="90dp"
             android:layout_height="match_parent"
             app:layout_anchorGravity="center"
-            app:srcCompat="@drawable/ic_back" />
+            app:srcCompat="@drawable/ic_back"
+            android:onClick="Back"/>
 
         <ImageButton
             android:id="@+id/imageButton3"

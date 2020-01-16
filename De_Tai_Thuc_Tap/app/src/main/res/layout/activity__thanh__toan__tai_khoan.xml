@@ -75,7 +75,7 @@
             android:id="@+id/txtTongTien1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="14.10"
+            android:text="14"
             android:textSize="18dp"
             android:textColor="@color/white"
             android:layout_marginLeft="40dp"
@@ -96,7 +96,7 @@
             android:id="@+id/txtgiamgia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tổng Tiền: "
+            android:text="Giảm Giá: "
             android:textColor="@color/white"/>
 
         <EditText
@@ -104,6 +104,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:hint="0"
+            android:inputType="number"
             android:textColorHint="@color/red"
             android:textSize="18dp"
             android:textColor="@color/red"
@@ -143,6 +144,7 @@
             android:textColor="@color/white"
             android:layout_marginLeft="40dp"
             android:background="@color/blue"
+            android:onClick="tinhthanhtien"
             android:padding="15dp"
             android:gravity="center"/>
     </LinearLayout>
@@ -159,7 +161,7 @@
             android:id="@+id/txtTienNhan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tổng Tiền: "
+            android:text="Tiền Nhận: "
             android:textColor="@color/white"/>
 
         <EditText
@@ -169,6 +171,7 @@
             android:hint="0"
             android:textColorHint="@color/green"
             android:textSize="18dp"
+            android:inputType="number"
             android:textColor="@color/green"
             android:layout_marginLeft="40dp"
             android:padding="15dp"
@@ -187,6 +190,7 @@
             android:hint="0"
             android:textColorHint="@color/green"
             android:textSize="18dp"
+            android:inputType="number"
             android:textColor="@color/green"
             android:layout_marginLeft="30dp"
             android:padding="15dp"
@@ -218,7 +222,8 @@
             android:layout_marginLeft="40dp"
             android:background="@color/green"
             android:padding="15dp"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:onClick="Tientralai"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/ln_driver7"

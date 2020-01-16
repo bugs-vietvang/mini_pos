@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_Thanh_Toan_TaiKhoan"
+    tools:context=".activity_Thanh_Toan_Tien_Mat"
     android:background="@drawable/bgr">
 
     <LinearLayout
@@ -40,6 +40,7 @@
             android:background="#053DE943"
             android:buttonTint="#48D14E"
             android:text="Thẻ Tín dụng"
+            android:onClick="opentheTinDung"
             android:textColor="@color/white" />
         <RadioButton
             android:id="@+id/rad_trentaikhoan"
@@ -68,10 +69,10 @@
             android:textColor="@color/white"/>
 
         <TextView
-            android:id="@+id/txtTongTien1"
+            android:id="@+id/txtTongTien2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="14.10"
+            android:text="14"
             android:textSize="18dp"
             android:textColor="@color/white"
             android:layout_marginLeft="40dp"
@@ -92,15 +93,16 @@
             android:id="@+id/txtgiamgia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tổng Tiền: "
+            android:text="Giảm Giá: "
             android:textColor="@color/white"/>
 
         <EditText
-            android:id="@+id/edt_giamgia"
+            android:id="@+id/edt_giamgia2"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:hint="0"
             android:textColorHint="@color/red"
+            android:inputType="number"
             android:textSize="18dp"
             android:textColor="@color/red"
             android:layout_marginLeft="40dp"
@@ -131,13 +133,14 @@
             android:textColor="@color/white"/>
 
         <TextView
-            android:id="@+id/txtThanhTien1"
+            android:id="@+id/txtThanhTien2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="14.10"
             android:textSize="18dp"
             android:textColor="@color/white"
             android:layout_marginLeft="40dp"
+            android:onClick="TinhTien"
             android:background="@color/blue"
             android:padding="15dp"
             android:gravity="center"/>
@@ -155,17 +158,18 @@
             android:id="@+id/txtTienNhan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tổng Tiền: "
+            android:text="Tiền Nhận: "
             android:textColor="@color/white"/>
 
         <EditText
-            android:id="@+id/edt_TienNhan"
+            android:id="@+id/edt_TienNhan1"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:hint="0"
             android:textColorHint="@color/green"
             android:textSize="18dp"
             android:textColor="@color/green"
+            android:inputType="number"
             android:layout_marginLeft="40dp"
             android:padding="15dp"
             android:gravity="center"/>
@@ -177,12 +181,13 @@
             android:textSize="18dp"
             android:textColor="@color/white"/>
         <EditText
-            android:id="@+id/edt_tientip"
+            android:id="@+id/edt_tientip1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="0"
             android:textColorHint="@color/green"
             android:textSize="18dp"
+            android:inputType="number"
             android:textColor="@color/green"
             android:layout_marginLeft="30dp"
             android:padding="15dp"
@@ -205,11 +210,12 @@
             android:textColor="@color/white"/>
 
         <TextView
-            android:id="@+id/txtTralai1"
+            android:id="@+id/txtTralai2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0.00"
             android:textSize="18dp"
+            android:onClick="TienTraLai"
             android:textColor="@color/white"
             android:layout_marginLeft="40dp"
             android:background="@color/green"

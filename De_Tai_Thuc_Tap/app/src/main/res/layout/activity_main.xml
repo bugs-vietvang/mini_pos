@@ -33,6 +33,7 @@
         android:drawableStart="@drawable/ic_lock_black_24dp"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
         android:drawablePadding="5dp"
+        android:inputType="textPassword"
         android:hint="Mật khẩu"
         android:textSize="18dp"
         android:background="@drawable/shape_input"
@@ -41,6 +42,7 @@
         android:textColorHint="@color/white"/>
 
     <Button
+        android:id="@+id/btn_dangnhap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/edit_password"
@@ -48,7 +50,7 @@
         android:layout_marginRight="200dp"
         android:layout_centerHorizontal="true"
         android:padding="15dp"
-        android:textSize="18dp"
+        android:textSize="20dp"
         android:text="Đăng Nhập"
         android:textColor="@color/white"
         android:background="@drawable/shape_botrongoc"

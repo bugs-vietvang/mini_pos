@@ -1,5 +1,6 @@
 package com.example.tranquangthien;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -27,4 +28,10 @@ public class activity_Chon_Mon extends AppCompatActivity {
         });
     }
 
+    public void Back(View view) {
+
+        Intent intent = new Intent(this, activity_Chon_Ban.class);
+        startActivity(intent);
+
+    }
 }
