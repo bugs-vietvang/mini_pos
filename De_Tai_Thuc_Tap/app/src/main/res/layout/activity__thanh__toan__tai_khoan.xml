@@ -144,7 +144,7 @@
             android:textColor="@color/white"
             android:layout_marginLeft="40dp"
             android:background="@color/blue"
-            android:onClick="tinhthanhtien"
+            android:onClick="thanhtien"
             android:padding="15dp"
             android:gravity="center"/>
     </LinearLayout>

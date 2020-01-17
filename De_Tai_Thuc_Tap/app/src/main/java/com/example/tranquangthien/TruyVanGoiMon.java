@@ -3,6 +3,7 @@ package com.example.tranquangthien;
 import android.app.Activity;
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
@@ -140,7 +141,7 @@ public class TruyVanGoiMon {
     //TB_LUUTAM
     public boolean themLuuTam (Order order){
         ContentValues values = new ContentValues();
-        values.put(SQLiteHelper.TB_LUUTAM_MAGOIMON,order.getMaOrder());
+        values.put(SQLiteHelper.TB_LUUTAM_MAGOIMON, order.getMaOrder());
         values.put(SQLiteHelper.TB_LUUTAM_MALOAI,order.getMaLoai());
         values.put(SQLiteHelper.TB_LUUTAM_MANHANVIEN,order.getMaNhanVien());
         values.put(SQLiteHelper.TB_LUUTAM_MAMONAN,order.getMaMonAn());

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class activity_Thanh_Toan_TaiKhoan extends AppCompatActivity {
 
@@ -66,14 +67,31 @@ public class activity_Thanh_Toan_TaiKhoan extends AppCompatActivity {
 
     }
 
-    public void tinhthanhtien(View view) {
-
-        TinhThanhTien();
+    public void thanhtien(View view) {
+       String gg = giamgia.getText().toString();
+        if(gg.equals(""))
+        {
+            Toast.makeText(this, "nhập tiền giảm giá",Toast.LENGTH_SHORT).show();
+        }
+        else
+            {
+            TinhThanhTien();
+            }
     }
 
     public void TienTraLai(View view) {
 
-        TienTraLai();
+        String tn = tiennhan.getText().toString();
+        String tp = tip.getText().toString();
+        if(tn.equals("")||tp.equals(""))
+        {
+            Toast.makeText(this, "nhập tiền giảm giá",Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            TienTraLai();
+        }
+
 
     }
 
