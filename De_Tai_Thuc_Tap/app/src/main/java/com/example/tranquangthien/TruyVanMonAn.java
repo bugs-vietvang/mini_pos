@@ -50,15 +50,15 @@ public class TruyVanMonAn {
         }
     }
 
-    public boolean xoaMonAnTheoMaMaMonAn(int mamonan){
-        long kiemtra = database.delete(SQLiteHelper.TB_MONAN, SQLiteHelper.TB_MONAN_MAMONAN + " = " + mamonan ,null);
-
-        if (kiemtra != 0){
-            return true;
-        }else{
-            return false;
-        }
-    }
+//    public boolean xoaMonAnTheoMaMaMonAn(int mamonan){
+//        long kiemtra = database.delete(SQLiteHelper.TB_MONAN, SQLiteHelper.TB_MONAN_MAMONAN + " = " + mamonan ,null);
+//
+//        if (kiemtra != 0){
+//            return true;
+//        }else{
+//            return false;
+//        }
+//    }
 
     public boolean xoaMonAnTheoMaLoai(int maloai){
         long kiemtra = database.delete(SQLiteHelper.TB_MONAN, SQLiteHelper.TB_MONAN_MALOAI + " = " + maloai ,null);

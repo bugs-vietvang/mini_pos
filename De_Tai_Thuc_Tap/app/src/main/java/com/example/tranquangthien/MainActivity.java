@@ -26,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void AnhXa() {
 
-        edUsername = (EditText)findViewById(R.id.edit_Username);
-        edPass = (EditText)findViewById(R.id.edit_password);
-        btnDangNhap = (Button)findViewById(R.id.btn_dangnhap);
+        edUsername = (EditText)findViewById(R.id.ed_formDangNhap_Username);
+        edPass = (EditText)findViewById(R.id.ed_formDangNhap_PassWord);
+        btnDangNhap = (Button)findViewById(R.id.btn_formDangNhap_DangNhap);
 
     }
 
-    public void openChonBan(View view) {
+    public void openDangNhap(View view) {
         String sTenDangNhap = edUsername.getText().toString();
         String sMatKhau = edPass.getText().toString();
         if(sTenDangNhap.equals("")||sMatKhau.equals(""))
@@ -48,5 +48,21 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "tài khoản hoặc mật khẩu không đúng", Toast.LENGTH_SHORT).show();
                }
         }
+    }
+
+    public void openDangNhapFB(View view) {
+
+        Toast.makeText(this,"Đăng nhập FaceBook thành công", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, activity_Chon_Ban.class);
+        startActivity(intent);
+
+    }
+
+    public void openDangNhapGG(View view) {
+
+        Toast.makeText(this,"Đăng nhập GooGle thành công", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, activity_Chon_Ban.class);
+        startActivity(intent);
+
     }
 }

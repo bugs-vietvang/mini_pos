@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_Thanh_Toan_TaiKhoan"
-
-    android:background="@drawable/bgr">
+    android:background="@color/colorAccent">
 
     <LinearLayout
         android:id="@+id/ln_driver1"
@@ -105,9 +104,9 @@
             android:layout_height="wrap_content"
             android:hint="0"
             android:inputType="number"
-            android:textColorHint="@color/red"
+            android:textColorHint="@color/white"
             android:textSize="18dp"
-            android:textColor="@color/red"
+            android:textColor="@color/white"
             android:layout_marginLeft="40dp"
             android:padding="15dp"
             android:gravity="center"/>
@@ -223,29 +222,30 @@
             android:background="@color/green"
             android:padding="15dp"
             android:gravity="center"
-            android:onClick="Tientralai"/>
+            android:onClick="TienTraLai"/>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/ln_driver7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/ln_driver6"
-        android:orientation="horizontal"
-        android:layout_marginTop="250dp"
-        android:gravity="right">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:orientation="horizontal">
 
 
         <Button
             android:id="@+id/btn_print1"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:text="In"
+            android:background="@color/black"
             android:drawableStart="@drawable/ic_print_white"
             android:drawableLeft="@drawable/ic_print_white"
-            android:textColor="@color/white"
-            android:background="@color/black"/>
+            android:text="In"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btn_thanhtoan"
@@ -253,10 +253,10 @@
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
             android:background="@color/black"
-            android:gravity="center"
             android:drawableStart="@drawable/ic_money"
             android:drawableLeft="@drawable/ic_money"
             android:drawablePadding="5dp"
+            android:gravity="center"
             android:text="Thanh Toán"
             android:textColor="@color/white" />
     </LinearLayout>

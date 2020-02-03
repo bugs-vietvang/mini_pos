@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_ThongTin"
-    android:background="@drawable/bgr"
+    android:background="@color/colorAccent"
     >
 
     <TableRow
@@ -135,14 +135,14 @@ android:id="@+id/tbr_hoadon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="566dp" />
+        app:layout_constraintGuide_begin="525dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="625dp" />
+        app:layout_constraintGuide_begin="597dp" />
 
     <TextView
         android:id="@+id/textView"

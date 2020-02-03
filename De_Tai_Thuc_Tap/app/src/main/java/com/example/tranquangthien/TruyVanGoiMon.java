@@ -248,7 +248,6 @@ public class TruyVanGoiMon {
             order.setGiaTien(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_GIATIEN)));
             order.setTenMonAn(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_TENMONAN)));
             order.setAnhMonAn(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_HINHANH)));
-
             orderList.add(order);
             cursor.moveToNext();
         }
@@ -290,32 +289,32 @@ public class TruyVanGoiMon {
         return thanhToanList;
     }
 
-    public boolean capNhatTrangThaiGoiMonTheoMaBan(int maban,String tinhtrang, int magoimon){
-        ContentValues values = new ContentValues();
-        values.put(SQLiteHelper.TB_GOIMON_TRANGTHAI,tinhtrang);
-
-        long kiemtra = database.update(SQLiteHelper.TB_GOIMON,values,SQLiteHelper.TB_GOIMON_MABAN + " = '" + maban + "' AND "
-                +SQLiteHelper.TB_GOIMON_MAGOIMON+" = "+magoimon,null);
-        if (kiemtra != 0){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    public int layMaBanTuMaGoiMon(int magoimon){
-        int maban = 0;
-        String cautruyvan = "SELECT * FROM " + SQLiteHelper.TB_GOIMON + " WHERE "+SQLiteHelper.TB_GOIMON_MAGOIMON + " = '" + magoimon + "' ";
-
-        Cursor cursor = database.rawQuery(cautruyvan,null);
-        cursor.moveToFirst();
-        while (!cursor.isAfterLast()){
-            maban = cursor.getInt(cursor.getColumnIndex(SQLiteHelper.TB_GOIMON_MABAN));
-
-            cursor.moveToNext();
-        }
-        return maban;
-    }
+//    public boolean capNhatTrangThaiGoiMonTheoMaBan(int maban,String tinhtrang, int magoimon){
+//        ContentValues values = new ContentValues();
+//        values.put(SQLiteHelper.TB_GOIMON_TRANGTHAI,tinhtrang);
+//
+//        long kiemtra = database.update(SQLiteHelper.TB_GOIMON,values,SQLiteHelper.TB_GOIMON_MABAN + " = '" + maban + "' AND "
+//                +SQLiteHelper.TB_GOIMON_MAGOIMON+" = "+magoimon,null);
+//        if (kiemtra != 0){
+//            return true;
+//        }else{
+//            return false;
+//        }
+//    }
+//
+//    public int layMaBanTuMaGoiMon(int magoimon){
+//        int maban = 0;
+//        String cautruyvan = "SELECT * FROM " + SQLiteHelper.TB_GOIMON + " WHERE "+SQLiteHelper.TB_GOIMON_MAGOIMON + " = '" + magoimon + "' ";
+//
+//        Cursor cursor = database.rawQuery(cautruyvan,null);
+//        cursor.moveToFirst();
+//        while (!cursor.isAfterLast()){
+//            maban = cursor.getInt(cursor.getColumnIndex(SQLiteHelper.TB_GOIMON_MABAN));
+//
+//            cursor.moveToNext();
+//        }
+//        return maban;
+//    }
 
 
 }
