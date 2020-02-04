@@ -1,14 +1,16 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.Model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class activity_ThongTin extends AppCompatActivity {
+import com.example.tranquangthien.R;
+
+public class cardview extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__thong_tin);
+        setContentView(R.layout.activity_cardview);
     }
 }

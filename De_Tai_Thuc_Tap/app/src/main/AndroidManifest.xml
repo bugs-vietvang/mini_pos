@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".item_hienthiban"></activity>
-        <activity android:name=".activity_ThongTin" />
-        <activity android:name=".cardview" />
-        <activity android:name=".Dialog_ThanhToan" />
-        <activity android:name=".activity_Chi_Tiet_Mon_An" />
+        <activity android:name=".Dialog.item_hienthiban"></activity>
+        <activity android:name=".Activity.activity_ThongTin" />
+        <activity android:name=".Model.cardview" />
+        <activity android:name=".Dialog.Dialog_ThanhToan" />
+        <activity android:name=".Activity.activity_Chi_Tiet_Mon_An" />
         <activity
-            android:name=".activity_Chon_Mon"
+            android:name=".Activity.activity_Chon_Mon"
             android:label="@string/title_activity__chon__mon"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity_goi_mon" />
-        <activity android:name=".activity_Thanh_Toan_Tien_Mat" />
-        <activity android:name=".activity_Chon_Ban" />
-        <activity android:name=".activity_Thanh_Toan_TaiKhoan" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.activity_goi_mon" />
+        <activity android:name=".Activity.activity_Thanh_Toan_Tien_Mat" />
+        <activity android:name=".Activity.activity_Chon_Ban" />
+        <activity android:name=".Activity.activity_Thanh_Toan_TaiKhoan" />
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

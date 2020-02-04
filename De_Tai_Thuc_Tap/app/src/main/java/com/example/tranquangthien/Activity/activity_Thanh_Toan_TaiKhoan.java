@@ -1,4 +1,4 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.tranquangthien.R;
 
 public class activity_Thanh_Toan_TaiKhoan extends AppCompatActivity {
 
@@ -91,9 +93,5 @@ public class activity_Thanh_Toan_TaiKhoan extends AppCompatActivity {
         {
             TienTraLai();
         }
-
-
     }
-
-
 }

@@ -1,9 +1,11 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.tranquangthien.R;
 
 public class activity_goi_mon extends AppCompatActivity {
 

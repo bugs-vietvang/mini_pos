@@ -1,8 +1,10 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.Dialog;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.tranquangthien.R;
 
 public class item_hienthiban extends AppCompatActivity {
 

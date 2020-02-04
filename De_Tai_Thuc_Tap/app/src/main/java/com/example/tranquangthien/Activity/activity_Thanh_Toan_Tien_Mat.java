@@ -1,12 +1,16 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.tranquangthien.R;
 
 public class activity_Thanh_Toan_Tien_Mat extends AppCompatActivity {
     private EditText giamgia, tiennhan, tip;
@@ -51,14 +55,28 @@ public class activity_Thanh_Toan_Tien_Mat extends AppCompatActivity {
     }
 
     public void TinhTien(View view) {
-
-        TinhThanhTien();
+        String gg = giamgia.getText().toString();
+        if(gg.equals(""))
+        {
+            Toast.makeText(this, "nhập tiền giảm giá",Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            TinhThanhTien();
+        }
     }
 
     public void TienTraLai(View view) {
-
-        TienTraLai();
-
+        String tn = tiennhan.getText().toString();
+        String tp = tip.getText().toString();
+        if(tn.equals("")||tp.equals(""))
+        {
+            Toast.makeText(this, "nhập tiền nhận hoặc tiền tip",Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            TienTraLai();
+        }
     }
 
     public void opentheTinDung(View view) {
@@ -67,5 +85,12 @@ public class activity_Thanh_Toan_Tien_Mat extends AppCompatActivity {
         dialog.setContentView(R.layout.dialog_thanh_toan);
         dialog.setCancelable(true);
         dialog.show();
+    }
+
+    public void openThanhtoanTK(View view) {
+
+        Intent intent = new Intent(this, activity_Thanh_Toan_TaiKhoan.class);
+        startActivity(intent);
+
     }
 }

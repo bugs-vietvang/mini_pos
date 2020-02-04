@@ -1,4 +1,4 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.Model;
 
 public class ThanhToan {
 

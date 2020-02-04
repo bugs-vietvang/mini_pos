@@ -14,7 +14,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginRight="70dp"
         android:layout_marginLeft="10dp"
-        tools:context=".cardview"
+        tools:context=".Model.cardview"
         android:background="@drawable/shape_input">
 
 

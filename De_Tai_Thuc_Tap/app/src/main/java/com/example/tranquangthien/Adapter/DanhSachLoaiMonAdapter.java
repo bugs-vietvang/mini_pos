@@ -1,4 +1,4 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.Adapter;
 
 import android.view.ViewGroup;
 

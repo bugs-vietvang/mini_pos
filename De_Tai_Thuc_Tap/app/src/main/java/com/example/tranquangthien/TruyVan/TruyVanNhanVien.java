@@ -1,4 +1,4 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.TruyVan;
 
 import android.app.Activity;
 import android.database.Cursor;

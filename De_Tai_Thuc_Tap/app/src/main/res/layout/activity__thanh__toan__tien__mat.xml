@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_Thanh_Toan_Tien_Mat"
+    tools:context=".Activity.activity_Thanh_Toan_Tien_Mat"
     android:background="@color/colorAccent">
 
     <LinearLayout
@@ -24,33 +24,44 @@
             android:drawableLeft="@drawable/ic_refresh"
             android:background="@color/black"
             android:textColor="@color/white"/>
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/rad_tienmat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#053DE943"
-            android:buttonTint="#48D14E"
-            android:text="Tiền mặt"
-            android:textColor="@color/white" />
-        <RadioButton
-            android:id="@+id/rad_thetindung"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#053DE943"
-            android:buttonTint="#48D14E"
-            android:text="Thẻ Tín dụng"
-            android:onClick="opentheTinDung"
-            android:textColor="@color/white" />
-        <RadioButton
-            android:id="@+id/rad_trentaikhoan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#053DE943"
-            android:buttonTint="#48D14E"
-            android:layout_gravity="center"
-            android:text="Trên tài khoản"
-            android:textColor="@color/white" />
+    <RadioButton
+        android:id="@+id/rad_tienmat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#053DE943"
+        android:buttonTint="#48D14E"
+        android:text="Tiền mặt"
+        android:checked="true"
+        android:textSize="12dp"
+        android:textColor="@color/white" />
+    <RadioButton
+        android:id="@+id/rad_thetindung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#053DE943"
+        android:buttonTint="#48D14E"
+        android:text="Thẻ Tín dụng"
+        android:textSize="12dp"
+        android:onClick="opentheTinDung"
+        android:textColor="@color/white" />
+    <RadioButton
+        android:id="@+id/rad_trentaikhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#053DE943"
+        android:buttonTint="#48D14E"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:text="Trên tài khoản"
+        android:onClick="openThanhtoanTK"
+        android:textColor="@color/white" />
+</RadioGroup>
+
     </LinearLayout>
     <LinearLayout
         android:id="@+id/ln_driver13"

@@ -1,10 +1,12 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.tranquangthien.R;
 
 public class activity_Chi_Tiet_Mon_An extends AppCompatActivity {
 

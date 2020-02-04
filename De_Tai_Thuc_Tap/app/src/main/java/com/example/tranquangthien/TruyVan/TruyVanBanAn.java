@@ -1,9 +1,11 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.TruyVan;
 
 import android.app.Activity;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.example.tranquangthien.Model.BanAn;
 
 import java.util.ArrayList;
 

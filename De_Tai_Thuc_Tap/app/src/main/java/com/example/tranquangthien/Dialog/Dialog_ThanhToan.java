@@ -1,4 +1,4 @@
-package com.example.tranquangthien;
+package com.example.tranquangthien.Dialog;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.tranquangthien.R;
 
 public class Dialog_ThanhToan extends AppCompatActivity {
 
