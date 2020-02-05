@@ -18,9 +18,6 @@ public class TruyVanLoaiMonAn {
         SQLiteHelper db = new SQLiteHelper(context);
         database = db.open();
     }
-
-
-
     public List<LoaiMonAn> LayDanhSachLoaiMonAn(){
         List<LoaiMonAn> loaiMonAnList = new ArrayList<LoaiMonAn>();
         String cautruyvan = "SELECT * FROM " + SQLiteHelper.TB_LOAIMONAN;
@@ -38,16 +35,14 @@ public class TruyVanLoaiMonAn {
         return loaiMonAnList;
     }
 
-//    public boolean xoaLoaiMonAnTheoMa(int maloai){
-//        long kiemtra = database.delete(SQLiteHelper.TB_LOAIMONAN, SQLiteHelper.TB_LOAIMONAN_MALOAI + " = " + maloai ,null);
-//
-//        if (kiemtra != 0){
-//            return true;
-//        }else{
-//            return false;
-//        }
-//    }
-
+    public boolean xoaLoaiMonAnTheoMa(int maloai){
+        long kiemtra = database.delete(SQLiteHelper.TB_LOAIMONAN, SQLiteHelper.TB_LOAIMONAN_MALOAI + " = " + maloai ,null);
+        if (kiemtra != 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
     public boolean themLoaiMonAn (String tenloai){
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.TB_LOAIMONAN_TENLOAI,tenloai);

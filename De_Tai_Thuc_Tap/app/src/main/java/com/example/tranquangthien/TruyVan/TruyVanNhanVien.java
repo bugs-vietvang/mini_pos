@@ -22,7 +22,7 @@ public class TruyVanNhanVien {
         }
     }
 
-    public int kiemTranDangNhap(String tendangnhap, String matkhau){
+    public int kiemTraDangNhap(String tendangnhap, String matkhau){
         String cauTruyVan = "SELECT * FROM " +SQLiteHelper.TB_NHANVIEN + " WHERE " + SQLiteHelper.TB_NHANVIEN_TENDANGNHAP + " = '" + tendangnhap
                 + "' AND " +SQLiteHelper.TB_NHANVIEN_MATKHAU + " = '" + matkhau +"'";
 

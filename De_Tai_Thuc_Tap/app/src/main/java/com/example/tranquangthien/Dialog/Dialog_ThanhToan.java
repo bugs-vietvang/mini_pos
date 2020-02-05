@@ -21,6 +21,6 @@ public class Dialog_ThanhToan extends AppCompatActivity {
 
     public void close(View view) {
         Dialog dialog = new Dialog(this);
-        dialog.cancel();
+        dialog.hide();
     }
 }

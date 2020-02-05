@@ -30,8 +30,6 @@ public class TruyVanBanAn {
             return false;
         }
     }
-
-
     public ArrayList<BanAn> layTatCaBanAn(){
         ArrayList<BanAn> banAnList = new ArrayList<BanAn>();
         String cauTruyVan = "SELECT * FROM " +SQLiteHelper.TB_BANAN + " ORDER BY " +SQLiteHelper.TB_BANAN_MABAN + " ASC ";
@@ -48,7 +46,6 @@ public class TruyVanBanAn {
         }
         return banAnList;
     }
-
     public void xoaTatCaBanAn(){
         database.delete(SQLiteHelper.TB_BANAN,null,null);
     }
@@ -87,7 +84,6 @@ public class TruyVanBanAn {
         }
         return tinhtrang;
     }
-
     public boolean capNhatLaiTinhTrangBan(int maban, String trangthai){
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.TB_BANAN_TRANGTHAI,trangthai);

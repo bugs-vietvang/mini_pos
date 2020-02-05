@@ -21,9 +21,7 @@ public class GoiMon {
         return THOIGIANVAO;
     }
 
-    public void setTHOIGIANVAO(String THOIGIANVAO) {
-        this.THOIGIANVAO = THOIGIANVAO;
-    }
+    public void setTHOIGIANVAO(String THOIGIANVAO) { this.THOIGIANVAO = THOIGIANVAO; }
 
     public int getMAGOIMON() {
         return MAGOIMON;

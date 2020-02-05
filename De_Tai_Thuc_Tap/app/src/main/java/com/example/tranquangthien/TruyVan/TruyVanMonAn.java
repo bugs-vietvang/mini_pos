@@ -38,7 +38,6 @@ public class TruyVanMonAn {
         }
         return monAnList;
     }
-
     public boolean capNhatLaiMonAn(int mamonan, String tenmonan, String giatien){
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.TB_MONAN_TENMONAN,tenmonan);
@@ -52,15 +51,15 @@ public class TruyVanMonAn {
         }
     }
 
-//    public boolean xoaMonAnTheoMaMaMonAn(int mamonan){
-//        long kiemtra = database.delete(SQLiteHelper.TB_MONAN, SQLiteHelper.TB_MONAN_MAMONAN + " = " + mamonan ,null);
-//
-//        if (kiemtra != 0){
-//            return true;
-//        }else{
-//            return false;
-//        }
-//    }
+    public boolean xoaMonAnTheoMaMaMonAn(int mamonan){
+        long kiemtra = database.delete(SQLiteHelper.TB_MONAN, SQLiteHelper.TB_MONAN_MAMONAN + " = " + mamonan ,null);
+
+        if (kiemtra != 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
     public boolean xoaMonAnTheoMaLoai(int maloai){
         long kiemtra = database.delete(SQLiteHelper.TB_MONAN, SQLiteHelper.TB_MONAN_MALOAI + " = " + maloai ,null);
@@ -93,9 +92,7 @@ public class TruyVanMonAn {
     }
 
 
-
-
-    //tạm
+    //lưu tạm
     public String layTenMonAnTheoMa (int maMonAn){
         String tenMonAn = null;
         String cautruyvan = "SELECT * FROM " + SQLiteHelper.TB_MONAN + " WHERE " + SQLiteHelper.TB_MONAN_MAMONAN + " = '" + maMonAn + "' ";
@@ -103,7 +100,6 @@ public class TruyVanMonAn {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
             tenMonAn = (cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_MONAN_TENMONAN)));
-
             cursor.moveToNext();
         }
         return tenMonAn;
@@ -133,5 +129,4 @@ public class TruyVanMonAn {
             return false;
         }
     }
-
 }
