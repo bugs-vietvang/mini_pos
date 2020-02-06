@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Dialog.item_hienthiban">
+    android:layout_marginBottom="54dp"
+    android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/btn_banan"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/yellow"
-        android:text="1"
-        android:textSize="34dp"
-        tools:ignore="MissingConstraints" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/_10sdp">
 
+        <ImageView
+            android:id="@+id/imgSlot"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvSlot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </FrameLayout>

@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         else {
            if(sTenDangNhap.equals("quangthien")&& sMatKhau.equals("123456"))
            {
-                Intent intent = new Intent(this, activity_Thanh_Toan_TaiKhoan.class);
+                Intent intent = new Intent(this, activity_Chon_Mon.class);
                 startActivity(intent);
             }
            else
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     public void openDangNhapFB(View view) {
 
         Toast.makeText(this,"Đăng nhập FaceBook thành công", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, activity_Chon_Ban.class);
+        Intent intent = new Intent(this, activity_Chon_Mon.class);
         startActivity(intent);
 
     }
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     public void openDangNhapGG(View view) {
 
         Toast.makeText(this,"Đăng nhập GooGle thành công", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, activity_Chon_Ban.class);
+        Intent intent = new Intent(this, activity_Chon_Mon.class);
         startActivity(intent);
 
     }
