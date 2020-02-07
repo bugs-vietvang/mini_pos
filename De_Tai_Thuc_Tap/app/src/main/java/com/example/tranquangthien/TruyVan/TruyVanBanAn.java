@@ -44,8 +44,8 @@ public class TruyVanBanAn {
             banAnList.add(banAn);
             cursor.moveToNext();
         }
-        return banAnList;
-    }
+//        return banAnList;
+//    }
     public void xoaTatCaBanAn(){
         database.delete(SQLiteHelper.TB_BANAN,null,null);
     }

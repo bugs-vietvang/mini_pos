@@ -23,7 +23,7 @@ public class activity_Chi_Tiet_Mon_An extends AppCompatActivity {
     }
 
     public void backChonban(View view) {
-        Intent intent = new Intent(this, activity_Chon_Ban.class);
+        Intent intent = new Intent(this, Activity_HienThiBanAn.class);
         startActivity(intent);
     }
 }

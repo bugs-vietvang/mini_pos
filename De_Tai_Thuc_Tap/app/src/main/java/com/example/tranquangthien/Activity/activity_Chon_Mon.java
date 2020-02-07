@@ -30,7 +30,7 @@ public class activity_Chon_Mon extends AppCompatActivity {
 
     public void Back(View view) {
 
-        Intent intent = new Intent(this, activity_Chon_Ban.class);
+        Intent intent = new Intent(this, Activity_HienThiBanAn.class);
         startActivity(intent);
 
     }

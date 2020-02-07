@@ -1,28 +1,12 @@
 package com.example.tranquangthien.Model;
 
+import java.util.ArrayList;
+
 public class BanAn {
 
-    int MABAN;
-    String TENBAN, TRANGTHAI;
-    boolean DUOCCHON;
-
-    public BanAn() {
-    }
-
-    public BanAn(int MABAN, String TENBAN, String TRANGTHAI, boolean DUOCCHON) {
-        this.MABAN = MABAN;
-        this.TENBAN = TENBAN;
-        this.TRANGTHAI = TRANGTHAI;
-        this.DUOCCHON = DUOCCHON;
-    }
-
-    public boolean isDUOCCHON() {
-        return DUOCCHON;
-    }
-
-    public void setDUOCCHON(boolean DUOCCHON) {
-        this.DUOCCHON = DUOCCHON;
-    }
+    private int MABAN;
+    private String TENBAN;
+    private String TRANGTHAI;
 
     public int getMABAN() {
         return MABAN;
@@ -45,6 +29,11 @@ public class BanAn {
     }
 
     public void setTRANGTHAI(String TRANGTHAI) {
+        this.TRANGTHAI = TRANGTHAI;
+    }
+
+    public BanAn(String TENBAN, String TRANGTHAI) {
+        this.TENBAN = TENBAN;
         this.TRANGTHAI = TRANGTHAI;
     }
 

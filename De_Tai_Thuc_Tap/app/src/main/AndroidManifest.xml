@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.TrangChuActivity"></activity>
-        <activity android:name=".Dialog.item_hienthiban" />
+        <activity android:name=".Dialog.ItemBanAn"></activity>
+        <activity android:name=".Activity.Activity_HienThiBanAn" />
+        <activity android:name=".Activity.TrangChuActivity" />
         <activity android:name=".Activity.activity_ThongTin" />
         <activity android:name=".Model.cardview" />
         <activity android:name=".Dialog.Dialog_ThanhToan" />
@@ -21,7 +22,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activity.activity_goi_mon" />
         <activity android:name=".Activity.activity_Thanh_Toan_Tien_Mat" />
-        <activity android:name=".Activity.activity_Chon_Ban" />
         <activity android:name=".Activity.activity_Thanh_Toan_TaiKhoan" />
         <activity android:name=".Activity.MainActivity">
             <intent-filter>

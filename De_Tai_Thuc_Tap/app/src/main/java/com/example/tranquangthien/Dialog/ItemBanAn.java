@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.tranquangthien.R;
 
-public class item_hienthiban extends AppCompatActivity {
+public class ItemBanAn extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item_hienthiban);
+        setContentView(R.layout.item_ban_an);
     }
 }
