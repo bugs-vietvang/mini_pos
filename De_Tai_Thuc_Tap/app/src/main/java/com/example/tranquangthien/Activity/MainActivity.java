@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         else {
            if(sTenDangNhap.equals("quangthien")&& sMatKhau.equals("123456"))
            {
-                Intent intent = new Intent(this, Activity_HienThiBanAn.class);
+                Intent intent = new Intent(this, activity_Chon_Mon.class);
                 startActivity(intent);
             }
            else

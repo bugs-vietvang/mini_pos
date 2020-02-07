@@ -1,49 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
-    >
-
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="match_parent"
-        android:src="@color/colorAccent" />
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:paddingLeft="5dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/txttenbanan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:text="tên bàn ăn"
-            />
-        <TextView
-            android:id="@+id/txttrangthai"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="14sp"
-            android:text="chưa có người"
-            />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/detail_button"
-        android:layout_width="wrap_content"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:layout_height="wrap_content">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:textSize="10sp"
-        android:text="Chi tiết"
-        />
-</LinearLayout>
+        android:layout_marginTop="@dimen/_10sdp">
+        <ImageView
+            android:id="@+id/imgSlot"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:background="@drawable/sukienclick"/>
+        <TextView
+            android:id="@+id/tvSlot"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

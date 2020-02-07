@@ -67,4 +67,8 @@ public class MonAn implements Serializable {
         this.GIATIEN = GIATIEN;
     }
 
+    public MonAn(String TEMONAN, String GIATIEN) {
+        this.TENMONAN = TEMONAN;
+        this.GIATIEN = GIATIEN;
+    }
 }

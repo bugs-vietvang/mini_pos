@@ -25,15 +25,18 @@ public class Activity_HienThiBanAn extends AppCompatActivity {
         recyclerView = findViewById(R.id.bananlist);
 
         mBanAn = new ArrayList<BanAn>();
-        for (int i = 1; i <= 20; i++) {
-            mBanAn.add(new BanAn("Student Name"+i , "Chưa Đặt"));
+        for (int i = 1; i <= 50; i++) {
+            mBanAn.add(new BanAn("Bàn "+i , "Chưa Đặt"));
         }
 
         adapter = new HienThiBanAnAdapter(mBanAn, this);
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-
+//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        int spanCount = 3;
+        int orientation = GridLayoutManager.VERTICAL;
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3);
+        gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setLayoutManager(gridLayoutManager);
     }
 }
