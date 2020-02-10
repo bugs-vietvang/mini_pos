@@ -55,7 +55,8 @@
             android:id="@+id/imageButton4"
             android:layout_width="90dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_menu" />
+            app:srcCompat="@drawable/ic_menu"
+            android:onClick="openchitietgoimon"/>
     </TableRow>
 
     <TableRow
@@ -121,10 +122,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/xam">
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvGoiMon"
                     android:layout_width="match_parent"
-                    android:layout_height="400dp">
+                    android:layout_height="400dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF">
 
                 </androidx.recyclerview.widget.RecyclerView>
             </LinearLayout>

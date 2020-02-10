@@ -9,10 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".item_HienThiMonAn"></activity>
+        <activity android:name=".Dialog.item_HienThiMonAn"></activity>
         <activity android:name=".Dialog.ItemBanAn" />
         <activity android:name=".Activity.Activity_HienThiBanAn" />
-        <activity android:name=".Activity.TrangChuActivity" />
         <activity android:name=".Activity.activity_ThongTin" />
         <activity android:name=".Model.cardview" />
         <activity android:name=".Dialog.Dialog_ThanhToan" />

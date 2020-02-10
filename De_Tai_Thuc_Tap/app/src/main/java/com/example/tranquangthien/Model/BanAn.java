@@ -8,6 +8,10 @@ public class BanAn {
     private String TENBAN;
     private String TRANGTHAI;
 
+    public BanAn() {
+
+    }
+
     public int getMABAN() {
         return MABAN;
     }

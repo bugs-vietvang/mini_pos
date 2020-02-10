@@ -138,7 +138,6 @@ public class TruyVanGoiMon {
                 +SQLiteHelper.TB_CHITIETGOIMON_MAGOIMON+" = "+magoimon,null);
     }
 
-    //TB_LUUTAM
     public boolean themLuuTam (Order order){
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.TB_LUUTAM_MAGOIMON, order.getMaOrder());

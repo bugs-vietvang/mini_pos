@@ -69,6 +69,7 @@ public class HienThiBanAnAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                         Toast.makeText(view.getContext(),TenBanAn.getText() +" | " + " Chưa Đặt", Toast.LENGTH_SHORT).show();
                     }
                 });
+
             }
         }
 

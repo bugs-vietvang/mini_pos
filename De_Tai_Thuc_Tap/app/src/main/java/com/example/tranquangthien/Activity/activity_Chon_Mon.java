@@ -3,6 +3,7 @@ package com.example.tranquangthien.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.tranquangthien.Activity.Activity_HienThiBanAn;
 import com.example.tranquangthien.Adapter.DanhSachMonAnAdapter;
 import com.example.tranquangthien.Adapter.HienThiBanAnAdapter;
 import com.example.tranquangthien.Model.BanAn;
@@ -64,6 +65,13 @@ public class activity_Chon_Mon extends AppCompatActivity {
     public void Back(View view) {
 
         Intent intent = new Intent(this, Activity_HienThiBanAn.class);
+        startActivity(intent);
+
+    }
+
+    public void openchitietgoimon(View view) {
+
+        Intent intent = new Intent(this, activity_ThongTin.class);
         startActivity(intent);
 
     }

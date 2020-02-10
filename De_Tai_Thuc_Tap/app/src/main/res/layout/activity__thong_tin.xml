@@ -16,7 +16,7 @@
         android:id="@+id/tableRow2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:background="@color/xam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -87,6 +87,7 @@ android:id="@+id/tbr_hoadon"
     android:textColor="@color/black"
     android:gravity="center"
     android:text="Mã HĐ"
+    android:layout_marginLeft="@dimen/_10sdp"
     />
 
         <TextView
@@ -106,7 +107,7 @@ android:id="@+id/tbr_hoadon"
             android:id="@+id/txt_tongtier"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="120dp"
+            android:layout_marginStart="100dp"
             android:background="@color/yellow"
             android:gravity="center"
             android:text="tổng tiền"
@@ -127,61 +128,55 @@ android:id="@+id/tbr_hoadon"
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="@dimen/_350sdp" />
     </LinearLayout>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="525dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="597dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="150dp"
         android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/xam"
         android:gravity="center"
         android:text="Tổng Tiền: "
         android:textColor="@color/black"
-        android:background="@color/xam"
         android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toBottomOf="@+id/lnhoadon"
+        tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:textSize="24dp"
-        android:text="14.10 $"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
         android:background="@color/green"
+        android:gravity="center"
+        android:text="14.10 $"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/ic_plus"
-
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        android:onClick="opengoimon"/>
 
     <Button
         android:id="@+id/button4"
@@ -191,17 +186,20 @@ android:id="@+id/tbr_hoadon"
 
         app:layout_constraintBottom_toBottomOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button3" />
+        app:layout_constraintTop_toTopOf="@+id/button3"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/ic_money"
         app:layout_constraintBottom_toBottomOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="ThanhToan"
         app:layout_constraintTop_toTopOf="@+id/button4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

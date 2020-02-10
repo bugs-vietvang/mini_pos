@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import com.example.tranquangthien.Adapter.HienThiBanAnAdapter;
@@ -17,6 +18,7 @@ public class Activity_HienThiBanAn extends AppCompatActivity {
     RecyclerView recyclerView;
     HienThiBanAnAdapter adapter;
     ArrayList<BanAn> mBanAn;
+    Activity activity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

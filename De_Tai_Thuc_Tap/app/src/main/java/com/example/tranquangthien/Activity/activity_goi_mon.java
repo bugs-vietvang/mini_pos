@@ -2,6 +2,7 @@ package com.example.tranquangthien.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -17,6 +18,8 @@ public class activity_goi_mon extends AppCompatActivity {
 
     public void openThanhToan(View view) {
 
+        Intent intent = new Intent(this, activity_Thanh_Toan_TaiKhoan.class);
+        startActivity(intent);
 
     }
 }
