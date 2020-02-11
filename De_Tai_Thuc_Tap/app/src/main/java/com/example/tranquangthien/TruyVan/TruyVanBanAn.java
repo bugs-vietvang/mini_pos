@@ -93,7 +93,6 @@ public class TruyVanBanAn {
                 return false;
             }
         }
-
         public String layTenBanTheoMaBan ( int maban){
             String tenban = null;
             String cautruyvan = "SELECT * FROM " + SQLiteHelper.TB_BANAN + " WHERE " + SQLiteHelper.TB_BANAN_MABAN + " = '" + maban + "' ";

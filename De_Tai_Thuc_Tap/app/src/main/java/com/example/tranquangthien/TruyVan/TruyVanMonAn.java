@@ -26,7 +26,6 @@ public class TruyVanMonAn {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
             MonAn monAn = new MonAn();
-            monAn.setHINHANH(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_MONAN_HINHANH)));
             monAn.setTENMONAN(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_MONAN_TENMONAN)));
             monAn.setGIATIEN(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_MONAN_GIATIEN)));
             monAn.setMAMONAN(cursor.getInt(cursor.getColumnIndex(SQLiteHelper.TB_MONAN_MAMONAN)));
@@ -80,7 +79,6 @@ public class TruyVanMonAn {
         values.put(SQLiteHelper.TB_MONAN_TENMONAN,monAn.getTENMONAN());
         values.put(SQLiteHelper.TB_MONAN_GIATIEN,monAn.getGIATIEN());
         values.put(SQLiteHelper.TB_MONAN_MALOAI,monAn.getMALOAI());
-        values.put(SQLiteHelper.TB_MONAN_HINHANH,monAn.getHINHANH());
         values.put(SQLiteHelper.TB_MONAN_TRANGTHAI,monAn.getTRANGTHAI());
 
         long kiemtra = database.insert(SQLiteHelper.TB_MONAN,null,values);

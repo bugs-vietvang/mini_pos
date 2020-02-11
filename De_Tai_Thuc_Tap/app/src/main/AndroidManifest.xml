@@ -13,7 +13,7 @@
         <activity android:name=".Dialog.ItemBanAn" />
         <activity android:name=".Activity.Activity_HienThiBanAn" />
         <activity android:name=".Activity.activity_ThongTin" />
-        <activity android:name=".Model.cardview" />
+        <activity android:name=".Dialog.cardview" />
         <activity android:name=".Dialog.Dialog_ThanhToan" />
         <activity android:name=".Activity.activity_Chi_Tiet_Mon_An" />
         <activity

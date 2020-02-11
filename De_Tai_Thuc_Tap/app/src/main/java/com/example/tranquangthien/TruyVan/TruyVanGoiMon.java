@@ -80,7 +80,6 @@ public class TruyVanGoiMon {
         values.put(SQLiteHelper.TB_CHITIETGOIMON_MAMONAN,order.getMaMonAn());
         values.put(SQLiteHelper.TB_CHITIETGOIMON_MANHANVIEN, order.getMaNhanVien());
         values.put(SQLiteHelper.TB_CHITIETGOIMON_MALOAI, order.getMaLoai());
-        values.put(SQLiteHelper.TB_CHITIETGOIMON_HINHANH, order.getAnhMonAn());
         values.put(SQLiteHelper.TB_CHITIETGOIMON_TENMONAN,order.getTenMonAn());
         values.put(SQLiteHelper.TB_CHITIETGOIMON_GIATIEN,order.getGiaTien());
 
@@ -246,7 +245,6 @@ public class TruyVanGoiMon {
             order.setSoLuong(cursor.getInt(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_SOLUONG)));
             order.setGiaTien(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_GIATIEN)));
             order.setTenMonAn(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_TENMONAN)));
-            order.setAnhMonAn(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_HINHANH)));
             orderList.add(order);
             cursor.moveToNext();
         }
@@ -314,6 +312,5 @@ public class TruyVanGoiMon {
         }
         return maban;
     }
-
 
 }

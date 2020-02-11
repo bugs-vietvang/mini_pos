@@ -21,7 +21,6 @@ public class DanhSachMonAnAdapter extends RecyclerView.Adapter {
 
     private List<MonAn> mMonAn;
     private Context mContext;
-
     public DanhSachMonAnAdapter(List _MonAn, Context mContext) {
         this.mMonAn = _MonAn;
         this.mContext = mContext;
@@ -51,8 +50,6 @@ public class DanhSachMonAnAdapter extends RecyclerView.Adapter {
      public static class ViewHolder extends RecyclerView.ViewHolder {
             private View itemview;
             public TextView tenMonAn, giaTien;
-
-
             public ViewHolder(View itemView) {
                 super(itemView);
                 itemview = itemView;
@@ -61,7 +58,6 @@ public class DanhSachMonAnAdapter extends RecyclerView.Adapter {
                 tenMonAn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
                         Toast.makeText(view.getContext(),tenMonAn.getText() +" | " + " Được thêm vào", Toast.LENGTH_SHORT).show();
                     }
                 });

@@ -23,7 +23,6 @@ public class Activity_HienThiBanAn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hien_thi_ban_an);
-
         recyclerView = findViewById(R.id.bananlist);
 
         mBanAn = new ArrayList<BanAn>();

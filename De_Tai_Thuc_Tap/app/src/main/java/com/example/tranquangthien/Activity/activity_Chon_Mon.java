@@ -49,17 +49,17 @@ public class activity_Chon_Mon extends AppCompatActivity {
 
         adapter = new DanhSachMonAnAdapter(mMonAn, this);
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(linearLayoutManager);
 //        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-//        int spanCount = 3;
-//        int orientation = GridLayoutManager.VERTICAL;
-//        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3);
-//        gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
+//
 //        recyclerView.setAdapter(adapter);
-//        recyclerView.setLayoutManager(gridLayoutManager);
+//        recyclerView.setLayoutManager(linearLayoutManager);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        int spanCount = 2;
+        int orientation = GridLayoutManager.VERTICAL;
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
+        gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(gridLayoutManager);
     }
 
     public void Back(View view) {

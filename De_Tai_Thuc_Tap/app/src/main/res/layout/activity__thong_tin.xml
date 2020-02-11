@@ -183,7 +183,7 @@ android:id="@+id/tbr_hoadon"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:background="@drawable/ic_info"
-
+        android:onClick="openchitietmonan"
         app:layout_constraintBottom_toBottomOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"

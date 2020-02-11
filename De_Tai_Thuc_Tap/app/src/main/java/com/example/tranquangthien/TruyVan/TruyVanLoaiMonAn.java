@@ -27,7 +27,6 @@ public class TruyVanLoaiMonAn {
             LoaiMonAn loaiMonAn = new LoaiMonAn();
             loaiMonAn.setMALOAI(cursor.getInt(cursor.getColumnIndex(SQLiteHelper.TB_LOAIMONAN_MALOAI)));
             loaiMonAn.setTENLOAI(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_LOAIMONAN_TENLOAI)));
-
             loaiMonAnList.add(loaiMonAn);
 
             cursor.moveToNext();

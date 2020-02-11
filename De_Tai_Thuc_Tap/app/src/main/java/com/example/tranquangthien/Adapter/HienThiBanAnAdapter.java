@@ -57,7 +57,7 @@ public class HienThiBanAnAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             public TextView TenBanAn;
             public ImageView imgview;
 
-            public ViewHolder(View itemView) {
+            public ViewHolder(final View itemView) {
                 super(itemView);
                 itemview = itemView;
                 imgview= itemView.findViewById(R.id.imgSlot);
@@ -65,7 +65,7 @@ public class HienThiBanAnAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                 imgview.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+                        Intent intent = new Intent();
                         Toast.makeText(view.getContext(),TenBanAn.getText() +" | " + " Chưa Đặt", Toast.LENGTH_SHORT).show();
                     }
                 });

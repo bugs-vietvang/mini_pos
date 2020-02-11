@@ -29,4 +29,11 @@ public class activity_ThongTin extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void openchitietmonan(View view) {
+        Intent intent = new Intent(this, activity_Chi_Tiet_Mon_An.class);
+        startActivity(intent);
+
+
+    }
 }

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:drawable="@color/yellow"
-    android:state_pressed="false"/>
-    <item android:drawable="@color/blue"
-        android:state_pressed="true"/>
+<item>
+        <shape>
+            <solid android:color="@color/yellow"
+                android:state_pressed="true"/>
+            <stroke android:width="1dp"
+                android:color="#FFFFFF"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    <shape>
+        <solid android:color="@color/blue"
+            android:state_pressed="false"/>
+        <stroke android:width="1dp"
+            android:color="#FFFFFF"/>
+        <corners android:radius="20dp"/>
+    </shape>
+</item>
 </selector>

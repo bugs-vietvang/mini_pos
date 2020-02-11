@@ -1,4 +1,4 @@
-package com.example.tranquangthien.Model;
+package com.example.tranquangthien.Dialog;
 
 import androidx.appcompat.app.AppCompatActivity;
 
