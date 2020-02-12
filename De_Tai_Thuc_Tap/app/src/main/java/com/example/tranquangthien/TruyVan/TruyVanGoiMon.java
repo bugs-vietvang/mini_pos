@@ -32,6 +32,20 @@ public class TruyVanGoiMon {
         long magoimon = database.insert(SQLiteHelper.TB_GOIMON,null,values);
         return magoimon;
     }
+
+    public long themGoiMonFromServer(GoiMon goiMon){
+        ContentValues values = new ContentValues();
+        values.put(SQLiteHelper.TB_GOIMON_MAGOIMON,goiMon.getMAGOIMON());
+        values.put(SQLiteHelper.TB_GOIMON_MABAN,goiMon.getMABAN());
+        values.put(SQLiteHelper.TB_GOIMON_MANV,goiMon.getMANHANVIEN());
+        values.put(SQLiteHelper.TB_GOIMON_NGAYGOI,goiMon.getNGAYGOI());
+        values.put(SQLiteHelper.TB_GOIMON_TRANGTHAI,goiMon.getTRANGTHAI());
+        values.put(SQLiteHelper.TB_GOIMON_THOIGIANVAO, goiMon.getTHOIGIANVAO());
+
+        long magoimon = database.replace(SQLiteHelper.TB_GOIMON,null,values);
+        return magoimon;
+    }
+
     public int layMaGoiMonTheoMaBan(int maban, String tinhtrang){
         String cautruyvan = "SELECT * FROM " + SQLiteHelper.TB_GOIMON + " WHERE " + SQLiteHelper.TB_GOIMON_MABAN + " = '" + maban + "' AND " +
                 SQLiteHelper.TB_GOIMON_TRANGTHAI + " = '" + tinhtrang + "' ";
@@ -90,7 +104,24 @@ public class TruyVanGoiMon {
             return false;
         }
     }
+    public boolean themChiTietGoiMonFromServer(Order order){
+        ContentValues values = new ContentValues();
+        values.put(SQLiteHelper.TB_CHITIETGOIMON_ID, order.getId());
+        values.put(SQLiteHelper.TB_CHITIETGOIMON_SOLUONG,order.getSoLuong());
+        values.put(SQLiteHelper.TB_CHITIETGOIMON_MAGOIMON,order.getMaOrder());
+        values.put(SQLiteHelper.TB_CHITIETGOIMON_MAMONAN,order.getMaMonAn());
+        values.put(SQLiteHelper.TB_CHITIETGOIMON_MANHANVIEN, order.getMaNhanVien());
+        values.put(SQLiteHelper.TB_CHITIETGOIMON_MALOAI, order.getMaLoai());
+        values.put(SQLiteHelper.TB_CHITIETGOIMON_TENMONAN,order.getTenMonAn());
+        values.put(SQLiteHelper.TB_CHITIETGOIMON_GIATIEN,order.getGiaTien());
 
+        long kiemtra = database.replace(SQLiteHelper.TB_CHITIETGOIMON,null,values);
+        if (kiemtra != 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
     public int layMaNhanVienTuMaGoiMon(int magoimon){
         int maNhanVien = 0;
         String cautruyvan = "SELECT * FROM " + SQLiteHelper.TB_GOIMON + " WHERE " + SQLiteHelper.TB_GOIMON_MAGOIMON + " = " +magoimon;
@@ -137,9 +168,10 @@ public class TruyVanGoiMon {
                 +SQLiteHelper.TB_CHITIETGOIMON_MAGOIMON+" = "+magoimon,null);
     }
 
+    //TB_LUUTAM
     public boolean themLuuTam (Order order){
         ContentValues values = new ContentValues();
-        values.put(SQLiteHelper.TB_LUUTAM_MAGOIMON, order.getMaOrder());
+        values.put(SQLiteHelper.TB_LUUTAM_MAGOIMON,order.getMaOrder());
         values.put(SQLiteHelper.TB_LUUTAM_MALOAI,order.getMaLoai());
         values.put(SQLiteHelper.TB_LUUTAM_MANHANVIEN,order.getMaNhanVien());
         values.put(SQLiteHelper.TB_LUUTAM_MAMONAN,order.getMaMonAn());
@@ -245,6 +277,7 @@ public class TruyVanGoiMon {
             order.setSoLuong(cursor.getInt(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_SOLUONG)));
             order.setGiaTien(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_GIATIEN)));
             order.setTenMonAn(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_TENMONAN)));
+
             orderList.add(order);
             cursor.moveToNext();
         }
@@ -280,6 +313,7 @@ public class TruyVanGoiMon {
             thanhToan.setGiaTien(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_GIATIEN)));
             thanhToan.setTenMonAn(cursor.getString(cursor.getColumnIndex(SQLiteHelper.TB_CHITIETGOIMON_TENMONAN)));
 
+
             thanhToanList.add(thanhToan);
             cursor.moveToNext();
         }
@@ -312,5 +346,5 @@ public class TruyVanGoiMon {
         }
         return maban;
     }
-
 }
+

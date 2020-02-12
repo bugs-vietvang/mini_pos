@@ -1,5 +1,6 @@
 package com.example.tranquangthien.Adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -15,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tranquangthien.Activity.Activity_HienThiBanAn;
+import com.example.tranquangthien.Activity.activity_Chon_Mon;
 import com.example.tranquangthien.Model.BanAn;
 import com.example.tranquangthien.R;
 
@@ -56,16 +58,24 @@ public class HienThiBanAnAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             private View itemview;
             public TextView TenBanAn;
             public ImageView imgview;
-
+//            BanAn banAn = mBanAn.get(position);
             public ViewHolder(final View itemView) {
                 super(itemView);
                 itemview = itemView;
                 imgview= itemView.findViewById(R.id.imgSlot);
                 TenBanAn = itemView.findViewById(R.id.tvSlot);
                 imgview.setOnClickListener(new View.OnClickListener() {
+                    public Activity mContext;
+
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent();
+//                        Intent intent1 = ((activity_Chon_Mon)Context).getIntent();
+//                        int manhanvien = intent1.getIntExtra("manhanvien",0);
+//                        Intent intent = new Intent(Context,activity_Chon_Mon.class);
+//                        intent.putExtra("maban",banAn.getMABAN());
+//                        intent.putExtra("tenban",banAn.getTENBAN());
+//                        intent.putExtra("manhanvien",manhanvien);
+//                        mContext.startActivity(intent);
                         Toast.makeText(view.getContext(),TenBanAn.getText() +" | " + " Chưa Đặt", Toast.LENGTH_SHORT).show();
                     }
                 });

@@ -16,8 +16,8 @@ public class TruyVanBanAn {
         SQLiteHelper db = new SQLiteHelper(context);
         database = db.open();
     }
-
     public boolean themBanAn(BanAn banAn) {
+
         ContentValues values = new ContentValues();
         values.put(SQLiteHelper.TB_BANAN_TENBAN, banAn.getTENBAN());
         values.put(SQLiteHelper.TB_BANAN_TRANGTHAI, banAn.getTRANGTHAI());

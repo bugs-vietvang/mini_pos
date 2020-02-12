@@ -289,12 +289,12 @@
         android:layout_below="@id/ln_driver16"
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
-        android:gravity="right">
+        android:gravity="center">
 
 
         <Button
             android:id="@+id/btn_print1"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/_130sdp"
             android:layout_height="70dp"
             android:text="In"
             android:drawableStart="@drawable/ic_print_white"
@@ -304,7 +304,7 @@
 
         <Button
             android:id="@+id/btn_thanhtoan"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/_130sdp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
             android:background="@color/black"
