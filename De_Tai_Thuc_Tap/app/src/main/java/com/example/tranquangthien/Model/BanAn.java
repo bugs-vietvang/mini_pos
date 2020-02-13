@@ -1,8 +1,9 @@
 package com.example.tranquangthien.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class BanAn {
+public class BanAn implements Serializable {
 
     private int MABAN;
     private String TENBAN;

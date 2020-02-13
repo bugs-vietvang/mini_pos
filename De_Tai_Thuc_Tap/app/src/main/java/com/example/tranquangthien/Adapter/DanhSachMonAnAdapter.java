@@ -58,6 +58,8 @@ public class DanhSachMonAnAdapter extends RecyclerView.Adapter {
                 tenMonAn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+
+
                         Toast.makeText(view.getContext(),tenMonAn.getText() +" | " + " Được thêm vào", Toast.LENGTH_SHORT).show();
                     }
                 });

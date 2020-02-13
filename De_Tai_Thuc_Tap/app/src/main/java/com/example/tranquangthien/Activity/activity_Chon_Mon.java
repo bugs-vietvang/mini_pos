@@ -66,9 +66,7 @@ public class activity_Chon_Mon extends AppCompatActivity {
 
         Intent intent = new Intent(this, Activity_HienThiBanAn.class);
         startActivity(intent);
-
     }
-
     public void openchitietgoimon(View view) {
 
         Intent intent = new Intent(this, activity_ThongTin.class);

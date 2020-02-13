@@ -58,49 +58,24 @@
             app:srcCompat="@drawable/ic_menu"
             android:onClick="openchitietgoimon"/>
     </TableRow>
+<LinearLayout
+    android:id="@+id/tbv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tableRow"
+    android:gravity="center">
 
-    <TableRow
-        android:id="@+id/tbv"
-        android:layout_below="@id/tableRow"
-        android:layout_width="match_parent"
+    <TextView
+
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/yellow">
+        android:text="Chọn Món"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_24sdp"
+        android:textStyle="bold" />
+</LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Menu"
-            android:textSize="14dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tên Món"
-            android:textSize="14dp"
-            android:layout_marginLeft="70dp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SL"
-            android:textSize="14dp"
-            android:layout_marginLeft="50dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Giá"
-            android:textSize="14dp"
-            android:layout_marginLeft="20dp"
-            android:textStyle="bold"/>
-
-    </TableRow>
     <LinearLayout
         android:id="@+id/ln_driver8"
         android:layout_width="match_parent"
@@ -141,9 +116,10 @@
         android:id="@+id/lntinhtien"
         android:layout_marginLeft="20dp"
         android:layout_below="@id/ln_driver8"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <EditText
             android:id="@+id/edtnhaptien"

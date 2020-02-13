@@ -32,12 +32,13 @@ public class Activity_HienThiBanAn extends AppCompatActivity {
 
         adapter = new HienThiBanAnAdapter(mBanAn, this);
 
-//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+//       LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         int spanCount = 3;
         int orientation = GridLayoutManager.VERTICAL;
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3);
         gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(gridLayoutManager);
+
     }
 }

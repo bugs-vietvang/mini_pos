@@ -12,7 +12,6 @@
     >
 
     <TableRow
-
         android:id="@+id/tableRow2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -89,7 +88,6 @@ android:id="@+id/tbr_hoadon"
     android:text="Mã HĐ"
     android:layout_marginLeft="@dimen/_10sdp"
     />
-
         <TextView
             android:id="@+id/txt_soban"
             android:layout_width="wrap_content"
@@ -123,12 +121,16 @@ android:id="@+id/tbr_hoadon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         app:layout_constraintTop_toBottomOf="@+id/tbr_hoadon">
 
-
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_thongtinchonmon"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp" />
+            android:layout_height="@dimen/_350sdp"
+            android:background="@color/white"/>
     </LinearLayout>
 
 

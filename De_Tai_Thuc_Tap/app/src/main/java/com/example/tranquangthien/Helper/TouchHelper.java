@@ -21,7 +21,7 @@ public class TouchHelper extends Activity implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__chon__ban);
+        setContentView(R.layout.activity_hien_thi_ban_an);
         // Instantiate the gesture detector with the
         // application context and an implementation of
         // GestureDetector.OnGestureListener

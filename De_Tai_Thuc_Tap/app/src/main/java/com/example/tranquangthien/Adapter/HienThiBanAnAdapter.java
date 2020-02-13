@@ -23,7 +23,6 @@ import com.example.tranquangthien.R;
 import java.util.List;
 
 public class HienThiBanAnAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-
         private List<BanAn> mBanAn;
         private Context mContext;
 
@@ -36,17 +35,14 @@ public class HienThiBanAnAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             Context context = parent.getContext();
             LayoutInflater inflater = LayoutInflater.from(context);
             View bananView = inflater.inflate(R.layout.item_ban_an, parent, false);
-
-            ViewHolder viewHolder = new ViewHolder(bananView);
+            ViewHolder viewHolder = new ViewHolder(bananView, mBanAn);
             return viewHolder;
-
         }
-
-
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         BanAn banAn = mBanAn.get(position);
         ((ViewHolder)(holder)).TenBanAn.setText(banAn.getTENBAN());
+
 //        ((ViewHolder)(holder)).TrangThai.setText(banAn.getTRANGTHAI()+"");
     }
 
@@ -55,27 +51,27 @@ public class HienThiBanAnAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             return mBanAn.size();
         }
         public static class ViewHolder extends RecyclerView.ViewHolder {
+            final int RESULT_PRODUCT_ACTIVITY = 1;
             private View itemview;
             public TextView TenBanAn;
             public ImageView imgview;
-//            BanAn banAn = mBanAn.get(position);
-            public ViewHolder(final View itemView) {
+            private List<BanAn> mBanAn;
+            public ViewHolder(final View itemView, List<BanAn> banAn) {
                 super(itemView);
                 itemview = itemView;
                 imgview= itemView.findViewById(R.id.imgSlot);
                 TenBanAn = itemView.findViewById(R.id.tvSlot);
+                mBanAn = banAn;
                 imgview.setOnClickListener(new View.OnClickListener() {
                     public Activity mContext;
-
                     @Override
                     public void onClick(View view) {
-//                        Intent intent1 = ((activity_Chon_Mon)Context).getIntent();
-//                        int manhanvien = intent1.getIntExtra("manhanvien",0);
-//                        Intent intent = new Intent(Context,activity_Chon_Mon.class);
-//                        intent.putExtra("maban",banAn.getMABAN());
-//                        intent.putExtra("tenban",banAn.getTENBAN());
-//                        intent.putExtra("manhanvien",manhanvien);
-//                        mContext.startActivity(intent);
+                        Intent intent = new Intent();
+                        intent.putExtra("isupdate", false);
+                        intent.setClass(mContext, activity_Chon_Mon.class);
+                        mContext.startActivityForResult(intent,RESULT_PRODUCT_ACTIVITY);
+                        mContext.startActivity(intent);
+                        mContext.getIntent();
                         Toast.makeText(view.getContext(),TenBanAn.getText() +" | " + " Chưa Đặt", Toast.LENGTH_SHORT).show();
                     }
                 });
